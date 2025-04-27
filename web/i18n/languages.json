@@ -1,0 +1,18 @@
+{
+  "languages": [
+    {
+      "value": "en-US",
+      "name": "English (United States)",
+      "prompt_name": "English",
+      "example": "Hello, chatbot!",
+      "supported": true
+    },
+    {
+      "value": "vi-VN",
+      "name": "Tiếng Việt (Việt Nam)",
+      "prompt_name": "Vietnamese",
+      "example": "Xin chào, chatbot!",
+      "supported": true
+    }
+  ]
+}
