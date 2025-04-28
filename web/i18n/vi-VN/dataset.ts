@@ -1,18 +1,18 @@
 const translation = {
-  knowledge: 'Kiến thức',
+  knowledge: 'Tài liệu',
   documentCount: ' tài liệu',
   wordCount: ' nghìn từ',
   appCount: ' ứng dụng liên kết',
-  createDataset: 'Tạo bộ kiến thức',
-  createDatasetIntro: 'Nhập dữ liệu văn bản của bạn hoặc cập nhật dữ liệu theo thời gian thực qua Webhook để tăng cường ngữ cảnh cho LLM.',
-  deleteDatasetConfirmTitle: 'Xóa bộ kiến thức này?',
+  createDataset: 'Tạo bộ tài liệu',
+  createDatasetIntro: 'Nhập dữ liệu cho chuyên viên của bạn',
+  deleteDatasetConfirmTitle: 'Xóa bộ tài liệu này?',
   deleteDatasetConfirmContent:
     'Việc xóa bộ kiến thức là không thể hoàn tác. Người dùng sẽ không còn truy cập được vào bộ kiến thức của bạn, và tất cả cấu hình cùng nhật ký lời nhắc sẽ bị xóa vĩnh viễn.',
   datasetUsedByApp: 'Bộ kiến thức này đang được sử dụng bởi một số ứng dụng. Các ứng dụng sẽ không thể sử dụng bộ kiến thức này nữa, và tất cả cấu hình lời nhắc cùng nhật ký sẽ bị xóa vĩnh viễn.',
   datasetDeleted: 'Bộ kiến thức đã được xóa',
   datasetDeleteFailed: 'Xóa bộ kiến thức không thành công',
   didYouKnow: 'Bạn có biết?',
-  intro1: 'Bộ kiến thức có thể được tích hợp vào ứng dụng Chatbot ',
+  intro1: 'Bộ tài liệu có thể được tích hợp vào ứng dụng Chatbot ',
   intro2: 'như một ngữ cảnh',
   intro3: ',',
   intro4: 'hoặc ',
@@ -20,7 +20,7 @@ const translation = {
   intro6: ' dưới dạng một plugin chỉ mục ChatGPT độc lập để xuất bản',
   unavailable: 'Không khả dụng',
   unavailableTip: 'Mô hình nhúng không khả dụng, cần cấu hình mô hình nhúng mặc định',
-  datasets: 'BỘ KIẾN THỨC',
+  datasets: 'BỘ TÀI LIỆU',
   datasetsApi: 'API',
   retrieval: {
     semantic_search: {
@@ -166,8 +166,8 @@ const translation = {
   enable: 'Kích hoạt',
   preprocessDocument: '{{số}} Tiền xử lý tài liệu',
   documentsDisabled: '{{num}} tài liệu bị vô hiệu hóa - không hoạt động trong hơn 30 ngày',
-  allKnowledge: 'Tất cả kiến thức',
-  allKnowledgeDescription: 'Chọn để hiển thị tất cả kiến thức trong không gian làm việc này. Chỉ Chủ sở hữu không gian làm việc mới có thể quản lý tất cả kiến thức.',
+  allKnowledge: 'Hiện tất cả tài liệu',
+  allKnowledgeDescription: 'Chọn để hiển thị tất cả tài liệu trong không gian làm việc này. Chỉ Chủ sở hữu không gian làm việc mới có thể quản lý tất cả kiến thức.',
 }
 
 export default translation

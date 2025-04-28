@@ -13,7 +13,7 @@ import PluginsNav from './plugins-nav'
 import ToolsNav from './tools-nav'
 import { WorkspaceProvider } from '@/context/workspace-context'
 import { useAppContext } from '@/context/app-context'
-// import LogoSite from '@/app/components/base/logo/logo-site'
+import LogoSite from '@/app/components/base/logo/logo-site'
 import WorkplaceSelector from '@/app/components/header/account-dropdown/workplace-selector'
 import useBreakpoints, { MediaType } from '@/hooks/use-breakpoints'
 import { useProviderContext } from '@/context/provider-context'
@@ -57,38 +57,38 @@ const Header = () => {
         >
           <Bars3Icon className="h-4 w-4 text-gray-500" />
         </div>}
-        {/* {
+        {
           !isMobile
           && <div className='flex w-64 p-2 pl-3 gap-1.5 items-center shrink-0 self-stretch'>
-            <Link href="/apps" className='flex w-8 h-8 items-center justify-center gap-2 shrink-0'>
+            {/* <Link href="/apps" className='flex w-8 h-8 items-center justify-center gap-2 shrink-0'>
               <LogoSite className='object-contain' />
-            </Link>
-            <div className='font-light text-divider-deep'>/</div>
+            </Link> */}
+            {/* <div className='font-light text-divider-deep'>/</div>
             <div className='flex items-center gap-0.5'>
               <WorkspaceProvider>
                 <WorkplaceSelector />
               </WorkspaceProvider>
               {enableBilling ? <PlanBadge allowHover sandboxAsUpgrade plan={plan.type} onClick={handlePlanClick} /> : <LicenseNav />}
-            </div>
+            </div> */}
           </div>
-        } */}
+        }
       </div >
-      {/* {isMobile && (
+      {isMobile && (
         <div className='flex'>
-          <Link href="/apps" className='flex items-center mr-4'>
+          {/* <Link href="/apps" className='flex items-center mr-4'>
             <LogoSite />
-          </Link>
-          <div className='font-light text-divider-deep'>/</div>
-          {enableBilling ? <PlanBadge allowHover sandboxAsUpgrade plan={plan.type} onClick={handlePlanClick} /> : <LicenseNav />}
+          </Link> */}
+          {/* <div className='font-light text-divider-deep'>/</div> */}
+          {/* {enableBilling ? <PlanBadge allowHover sandboxAsUpgrade plan={plan.type} onClick={handlePlanClick} /> : <LicenseNav />} */}
         </div >
-      )} */}
+      )}
       {
         !isMobile && (
           <div className='flex items-center'>
             {/* {!isCurrentWorkspaceDatasetOperator && <ExploreNav className={navClassName} />} */}
             {!isCurrentWorkspaceDatasetOperator && <AppNav />}
             {(isCurrentWorkspaceEditor || isCurrentWorkspaceDatasetOperator) && <DatasetNav />}
-            {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />}
+            {/* {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />} */}
           </div>
         )
       }
@@ -105,7 +105,7 @@ const Header = () => {
             {/* {!isCurrentWorkspaceDatasetOperator && <ExploreNav className={navClassName} />} */}
             {!isCurrentWorkspaceDatasetOperator && <AppNav />}
             {(isCurrentWorkspaceEditor || isCurrentWorkspaceDatasetOperator) && <DatasetNav />}
-            {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />}
+            {/* {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />} */}
           </div>
         )
       }

@@ -41,7 +41,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
   const { notify } = useContext(ToastContext)
   const mutateApps = useContextSelector(AppsContext, state => state.mutateApps)
 
-  const [appMode, setAppMode] = useState<AppMode>('chat')
+  const [appMode, setAppMode] = useState<AppMode>('agent-chat')
   const [appIcon, setAppIcon] = useState<AppIconSelection>({ type: 'emoji', icon: '🤖', background: '#FFEAD5' })
   const [showAppIconPicker, setShowAppIconPicker] = useState(false)
   const [name, setName] = useState('')
@@ -110,7 +110,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                 <span className='system-2xs-medium-uppercase text-text-tertiary'>{t('app.newApp.forBeginners')}</span>
               </div>
               <div className='flex flex-row gap-2'>
-                <AppTypeCard
+                {/* <AppTypeCard
                   active={appMode === 'chat'}
                   title={t('app.types.chatbot')}
                   description={t('app.newApp.chatbotShortDescription')}
@@ -119,7 +119,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   </div>}
                   onClick={() => {
                     setAppMode('chat')
-                  }} />
+                  }} /> */}
                 <AppTypeCard
                   active={appMode === 'agent-chat'}
                   title={t('app.types.agent')}
@@ -130,7 +130,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   onClick={() => {
                     setAppMode('agent-chat')
                   }} />
-                <AppTypeCard
+                {/* <AppTypeCard
                   active={appMode === 'completion'}
                   title={t('app.newApp.completeApp')}
                   description={t('app.newApp.completionShortDescription')}
@@ -139,7 +139,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   </div>}
                   onClick={() => {
                     setAppMode('completion')
-                  }} />
+                  }} /> */}
               </div>
             </div>
             <div>
@@ -147,7 +147,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                 <span className='system-2xs-medium-uppercase text-text-tertiary'>{t('app.newApp.forAdvanced')}</span>
               </div>
               <div className='flex flex-row gap-2'>
-                <AppTypeCard
+                {/* <AppTypeCard
                   beta
                   active={appMode === 'advanced-chat'}
                   title={t('app.types.advanced')}
@@ -157,8 +157,8 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   </div>}
                   onClick={() => {
                     setAppMode('advanced-chat')
-                  }} />
-                <AppTypeCard
+                  }} /> */}
+                {/* <AppTypeCard
                   beta
                   active={appMode === 'workflow'}
                   title={t('app.types.workflow')}
@@ -168,7 +168,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   </div>}
                   onClick={() => {
                     setAppMode('workflow')
-                  }} />
+                  }} /> */}
               </div>
             </div>
             <Divider style={{ margin: 0 }} />
@@ -241,11 +241,11 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
           <AppPreview mode={appMode} />
           <div className='absolute left-0 right-0 border-b border-b-divider-subtle'></div>
           <div className='w-[664px] h-[448px] flex items-center justify-center' style={{ background: 'repeating-linear-gradient(135deg, transparent, transparent 2px, rgba(16,24,40,0.04) 4px,transparent 3px, transparent 6px)' }}>
-            <AppScreenShot show={appMode === 'chat'} mode='chat' />
-            <AppScreenShot show={appMode === 'advanced-chat'} mode='advanced-chat' />
+            {/* <AppScreenShot show={appMode === 'chat'} mode='chat' /> */}
+            {/* <AppScreenShot show={appMode === 'advanced-chat'} mode='advanced-chat' /> */}
             <AppScreenShot show={appMode === 'agent-chat'} mode='agent-chat' />
-            <AppScreenShot show={appMode === 'completion'} mode='completion' />
-            <AppScreenShot show={appMode === 'workflow'} mode='workflow' />
+            {/* <AppScreenShot show={appMode === 'completion'} mode='completion' /> */}
+            {/* <AppScreenShot show={appMode === 'workflow'} mode='workflow' /> */}
           </div>
           <div className='absolute left-0 right-0 border-b border-b-divider-subtle'></div>
         </div>

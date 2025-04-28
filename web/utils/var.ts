@@ -104,3 +104,5 @@ export const getVars = (value: string) => {
   })
   return res
 }
+
+export const basePath = ''

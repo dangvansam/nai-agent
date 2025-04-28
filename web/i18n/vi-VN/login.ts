@@ -1,6 +1,6 @@
 const translation = {
-  pageTitle: 'Xin chào, hãy bắt đầu! 👋',
-  welcome: 'Chào mừng bạn đến với Chatbot, vui lòng đăng nhập để tiếp tục.',
+  pageTitle: 'Đăng nhập hệ thống NAI-Agent',
+  welcome: 'Chào mừng bạn đến với hệ thống NAI-Agent, vui lòng đăng nhập để tiếp tục.',
   email: 'Địa chỉ email',
   emailPlaceholder: 'Nhập email của bạn',
   password: 'Mật khẩu',

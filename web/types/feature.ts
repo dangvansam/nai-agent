@@ -35,17 +35,17 @@ export type SystemFeatures = {
 }
 
 export const defaultSystemFeatures: SystemFeatures = {
-  sso_enforced_for_signin: false,
+  sso_enforced_for_signin: true,
   sso_enforced_for_signin_protocol: '',
-  sso_enforced_for_web: false,
+  sso_enforced_for_web: true,
   sso_enforced_for_web_protocol: '',
   enable_web_sso_switch_component: false,
   enable_marketplace: false,
   enable_email_code_login: false,
-  enable_email_password_login: false,
-  enable_social_oauth_login: false,
-  is_allow_create_workspace: false,
-  is_allow_register: false,
+  enable_email_password_login: true,
+  enable_social_oauth_login: true,
+  is_allow_create_workspace: true,
+  is_allow_register: true,
   is_email_setup: false,
   license: {
     status: LicenseStatus.NONE,

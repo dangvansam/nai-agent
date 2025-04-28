@@ -1,4 +1,5 @@
 language_timezone_mapping = {
+    "vi-VN": "Asia/Ho_Chi_Minh",
     "en-US": "America/New_York",
     "zh-Hans": "Asia/Shanghai",
     "zh-Hant": "Asia/Taipei",
@@ -11,7 +12,6 @@ language_timezone_mapping = {
     "ru-RU": "Europe/Moscow",
     "it-IT": "Europe/Rome",
     "uk-UA": "Europe/Kyiv",
-    "vi-VN": "Asia/Ho_Chi_Minh",
     "ro-RO": "Europe/Bucharest",
     "pl-PL": "Europe/Warsaw",
     "hi-IN": "Asia/Kolkata",

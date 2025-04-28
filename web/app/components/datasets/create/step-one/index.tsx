@@ -163,28 +163,6 @@ const StepOne = ({
                   <div
                     className={cn(
                       s.dataSourceItem,
-                      dataSourceType === DataSourceType.NOTION && s.active,
-                      dataSourceTypeDisable && dataSourceType !== DataSourceType.NOTION && s.disabled,
-                    )}
-                    onClick={() => {
-                      if (dataSourceTypeDisable)
-                        return
-                      changeType(DataSourceType.NOTION)
-                      hideFilePreview()
-                      hideNotionPagePreview()
-                    }}
-                  >
-                    <span className={cn(s.datasetIcon, s.notion)} />
-                    <span
-                      title={t('datasetCreation.stepOne.dataSourceType.notion')}
-                      className='truncate'
-                    >
-                      {t('datasetCreation.stepOne.dataSourceType.notion')}
-                    </span>
-                  </div>
-                  <div
-                    className={cn(
-                      s.dataSourceItem,
                       dataSourceType === DataSourceType.WEB && s.active,
                       dataSourceTypeDisable && dataSourceType !== DataSourceType.WEB && s.disabled,
                     )}
@@ -228,36 +206,6 @@ const StepOne = ({
                 </div>
               </>
             )}
-            {dataSourceType === DataSourceType.NOTION && (
-              <>
-                {!hasConnection && <NotionConnector onSetting={onSetting} />}
-                {hasConnection && (
-                  <>
-                    <div className='mb-8 w-[640px]'>
-                      <NotionPageSelector
-                        value={notionPages.map(page => page.page_id)}
-                        onSelect={updateNotionPages}
-                        onPreview={updateCurrentPage}
-                      />
-                    </div>
-                    {isShowVectorSpaceFull && (
-                      <div className='max-w-[640px] mb-4'>
-                        <VectorSpaceFull />
-                      </div>
-                    )}
-                    <div className="flex justify-end gap-2 max-w-[640px]">
-                      {/* <Button>{t('datasetCreation.stepOne.cancel')}</Button> */}
-                      <Button disabled={isShowVectorSpaceFull || !notionPages.length} variant='primary' onClick={onStepChange}>
-                        <span className="flex gap-0.5 px-[10px]">
-                          <span className="px-0.5">{t('datasetCreation.stepOne.button')}</span>
-                          <RiArrowRightLine className="size-4" />
-                        </span>
-                      </Button>
-                    </div>
-                  </>
-                )}
-              </>
-            )}
             {dataSourceType === DataSourceType.WEB && (
               <>
                 <div className={cn('mb-8 w-[640px]', !shouldShowDataSourceTypeList && 'mt-12')}>
@@ -287,7 +235,7 @@ const StepOne = ({
                 </div>
               </>
             )}
-            {!datasetId && (
+            {/* {!datasetId && (
               <>
                 <div className={s.dividerLine} />
                 <span className="inline-flex items-center cursor-pointer text-[13px] leading-4 text-text-accent" onClick={modalShowHandle}>
@@ -295,14 +243,14 @@ const StepOne = ({
                   {t('datasetCreation.stepOne.emptyDatasetCreation')}
                 </span>
               </>
-            )}
+            )} */}
           </div>
-          <EmptyDatasetCreationModal show={showModal} onHide={modalCloseHandle} />
+          {/* <EmptyDatasetCreationModal show={showModal} onHide={modalCloseHandle} /> */}
         </div>
       </div>
       <div className='w-1/2 h-full overflow-y-auto'>
         {currentFile && <FilePreview file={currentFile} hidePreview={hideFilePreview} />}
-        {currentNotionPage && <NotionPagePreview currentPage={currentNotionPage} hidePreview={hideNotionPagePreview} />}
+        {/* {currentNotionPage && <NotionPagePreview currentPage={currentNotionPage} hidePreview={hideNotionPagePreview} />} */}
         {currentWebsite && <WebsitePreview payload={currentWebsite} hidePreview={hideWebsitePreview} />}
       </div>
     </div>

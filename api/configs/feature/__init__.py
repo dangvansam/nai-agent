@@ -822,7 +822,7 @@ class LoginConfig(BaseSettings):
     )
     ENABLE_SOCIAL_OAUTH_LOGIN: bool = Field(
         description="whether to enable github/google oauth login",
-        default=False,
+        default=True,
     )
     EMAIL_CODE_LOGIN_TOKEN_EXPIRY_MINUTES: PositiveInt = Field(
         description="expiry time in minutes for email code login token",
@@ -830,11 +830,11 @@ class LoginConfig(BaseSettings):
     )
     ALLOW_REGISTER: bool = Field(
         description="whether to enable register",
-        default=False,
+        default=True,
     )
     ALLOW_CREATE_WORKSPACE: bool = Field(
         description="whether to enable create workspace",
-        default=False,
+        default=True,
     )
 
 

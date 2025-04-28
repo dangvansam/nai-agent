@@ -132,10 +132,10 @@ const translation = {
   menus: {
     status: 'beta',
     explore: 'Khám phá',
-    apps: 'Studio',
-    plugins: 'Plugins',
+    apps: 'Danh sách chuyên viên',
+    plugins: 'Các mô hình AI',
     pluginsTips: 'Tích hợp các plugin bên thứ ba hoặc tạo ra các AI-Plugin tương thích với ChatGPT.',
-    datasets: 'Kiến thức',
+    datasets: 'Tài liệu',
     datasetsTips: 'SẮP RA MẮT: Nhập dữ liệu văn bản của bạn hoặc cập nhật dữ liệu theo thời gian thực thông qua Webhook để cải thiện ngữ cảnh LLM.',
     newApp: 'Ứng dụng mới',
     newDataset: 'Tạo Kiến thức',
